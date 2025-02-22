@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f8f9fa;
+    height: 130vh;
+}   
+
+
+/* REQUEST FORM STYLE */
+.content {
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    background-color: #fffafa;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+h2 {
+    text-align: center; 
+    font-size: 2.5rem; 
+    font-weight: 650;
+    margin-top: 5%;
+    margin-bottom: 30px; /* Space below the heading */
+    color: #141414; 
+}
+p{
+    text-align: left;
+    margin-left: 20%;
+}
+
+.form-section {
+    margin-bottom: 30px; 
+    padding: 15px; 
+}
+
+.form-section h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #141414; 
+}
+
+label {
+    display: block; 
+    margin-bottom: 10px; 
+    font-size: 1rem; 
+    color: #141414; 
+}
+
+input[type="checkbox"] {
+    margin-right: 10px; 
+}
+
+.form-control {
+    width: 50%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    margin-top: 10px; 
+    font-size: 1rem; 
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    width: 150px; /* Adjust based on your preference */
+    margin-right: 5px;
+    margin-top: 2%;
+}
+
+
+.terms-section{
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Horizontally centers the button */
+    align-items: center;     /* Vertically centers the button if needed */
+}
+.submitbtn{
+    padding: 10px 20px;
+    background-color: #C4203C;
+    border: none;
+    border-radius: 10px;
+    font-weight: 550;
+    margin-top: 1%;
+    margin-bottom: 5%;
+
+}
+.submitbtn:hover{    
+    background-color: #f12245;
+}
+
+.publication-form{
+    margin-top: 1%; /* Separation from sections below */
+}
+

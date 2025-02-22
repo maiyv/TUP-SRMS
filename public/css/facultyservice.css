@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f8f9fa;
+    height: 130vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Form Styling */
+.faculty-content {
+    margin-top: 8%;
+    margin-left: 23%;
+    padding: 20px;
+}
+
+.faculty-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.faculty-header h1 {
+    font-size: 2rem;
+    font-weight: 650;
+    text-transform: uppercase;
+}
+
+/* Add some space between the options */
+#serviceCategory {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Add space between the options in the dropdown */
+#serviceCategory option {
+    padding: 8px;
+}
+
+
+/* Optional: Add space between each form section for better visual spacing */
+.form-section {
+    margin-bottom: 20px;
+}
+
+.submitbtn {
+    padding: 10px 20px;
+    background-color: #C4203C;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 550;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submitbtn:hover {
+    background-color: #f12245;
+}

@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f8f9fa;
+    height: 130vh;
+}   
+
+/* NAVBAR STYLE */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed; 
+    top: 0; /* Stick it to the top of the viewport */
+    width: 100%; 
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for visibility */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-logo .logo {
+    height: 70px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-menu a:hover {
+    color: #adadad;
+    border-radius: 5px;
+}
+
+.notification-icon, .profile-icon {
+    font-size: 1.5em;
+}
+
+.profile-img-navbar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dropdown-content{
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    background-color: #333;
+    min-width: 150px;
+    z-index: 1;
+    margin-top: 5px;
+    border-radius: 5px;
+    right: 0; /* Align dropdown to the left */
+}
+.dropdown-content a{
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    text-transform: none;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* SERVICES STYLE */
+.services-overview {
+    background-color: #f9f9f9; 
+    padding: 5% 0;
+    margin-top: 10%; 
+}
+
+.section-title {
+    font-size: 2.5rem; 
+    margin-bottom: 5%; 
+}
+
+.row {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.service-card {
+    background: #FFF6F8; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 95%; 
+    transition: transform 0.3s ease-in-out;
+
+}
+.service-card:hover{
+    transform: scale(1.05);
+}
+
+
+.service-image {
+    max-width: 80%; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.service-card h3 {
+    margin-top: 15px; /* Space above title */
+    font-size: 1.5rem;
+}
+
+.service-card p {
+    font-size: 1rem; 
+    color: #666; /* Slightly lighter text color */
+    flex-grow: 1; 
+}
+.requestbtn{
+    display: block; /* Make it a block-level element */
+    margin: 0 auto; /* Center horizontally */
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: 550;
+    background-color: #C4203C;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    align-items: center;
+    text-transform: uppercase;
+}
+.requestbtn:hover{
+    background-color: #f12245;
+
+}
+
+
+/* FOOTER STYLE */
+.footer {
+    background-color: #333;
+    padding: 20px 0; 
+    text-align: center; 
+}
+
+.footer-row {
+    margin-bottom: 15px; 
+}
+
+.footer-logo {
+    display: flex; 
+    justify-content: center; 
+}
+
+.footer-logo-img {
+    max-width: 120px; 
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-left: 20px; /* Add left margin for spacing */
+}
+
+.links-row {
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+.contact-item,
+.links-item {
+    margin: 12px 0; 
+    display: flex; 
+    align-items: flex-start; 
+    color: #ffffff; 
+
+}
+
+.contact-item i {
+    margin-right: 10px; 
+    color: #ffffff; 
+}
+
+.links-item a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.links-item a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media and Copyright Styles */
+.social-media-row {
+    display: block;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.social-media {
+    margin-right: 20px; /* Space between icons and copyright */
+}
+
+.social-media a {
+    color: #ffffff; 
+    margin: 0 10px; 
+    font-size: 1.5rem;
+}
+
+.social-media a:hover {
+    color: #f12245;
+}
+
+.copyright {
+    color: #ffffff; 
+    font-size: 0.9rem; 
+}

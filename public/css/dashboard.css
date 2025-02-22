@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    padding: 40px 0;
+    margin-bottom: 20px;
+    margin-top: 8%;
+    margin-left: 22%;
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.hero-content .lead {
+    color: #6c757d;
+    font-size: 1.1rem;
+}
+
+/* Quick Actions */
+.quick-actions {
+    margin-bottom: 30px;
+    margin-left: 22%;
+}
+
+.action-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.action-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+.action-button:hover {
+    transform: translateY(-5px);
+}
+
+.action-button i {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #C4203C;
+    transition: transform 0.2s ease;
+}
+
+/* Status Overview */
+.status-overview {
+    margin-bottom: 30px;
+    margin-left: 22%;
+}
+
+.status-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.icon-wrapper {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.status-card.total .icon-wrapper {
+    background: rgba(196, 32, 60, 0.1);
+    color: #C4203C;
+}
+
+.status-card.pending .icon-wrapper {
+    background: rgba(255, 193, 7, 0.1);
+    color: #ffc107;
+}
+
+.status-card.processing .icon-wrapper {
+    background: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+}
+
+.status-card.completed .icon-wrapper {
+    background: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+}
+
+.status-details h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.status-details p {
+    color: #6c757d;
+    margin: 0;
+}
+
+/* Recent Requests */
+.recent-requests {
+    max-width: 75%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container */
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-left: 23%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.view-all {
+    color: #C4203C;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.request-table-wrapper {
+    overflow-x: auto;
+}
+
+.request-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.request-table th {
+    background-color: #C4203C;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.request-table td {
+    padding: 12px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.status-badge.pending {
+    background: rgba(255, 193, 7, 0.1);
+    color: #ffc107;
+}
+
+.status-badge.processing {
+    background: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+}
+
+.status-badge.completed {
+    background: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-view, .btn-edit {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    color: #6c757d;
+    transition: color 0.3s ease;
+}
+
+.btn-view:hover {
+    color: #C4203C;
+}
+
+.btn-edit:hover {
+    color: #0d6efd;
+}
+
+.btn-primary {
+    display: block;
+    margin: 20px auto; 
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    background-color: #C4203C; /* Bootstrap primary color */
+    color: white;
+    border: none; /* No border */
+}
+
+.btn-primary:hover {
+    background-color: #e43854; /* Darker blue on hover */
+}
+
+/* Service Categories */
+.service-categories {
+    margin-left: 22%;
+    margin-bottom: 30px;
+}
+
+.service-categories h2 {
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.empty-state img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.empty-state p {
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    padding: 20px;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-details {
+    padding: 15px;
+}
+
+.service-details h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 1.25rem;
+}
+
+.service-details p {
+    color: #666;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.service-actions {
+    padding: 15px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+.category-card {
+    background: white;
+    border-radius: 10px;
+    padding: 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.category-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+.category-card i {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin: 20px 0;
+    display: block;
+}
+
+.category-card h3 {
+    color: #333;
+    margin: 15px;
+    font-size: 1.25rem;
+    padding: 0 10px;
+}
+
+.category-card p {
+    color: #666;
+    margin: 0 15px 15px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
+.service-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.service-btn:hover {
+    background-color: #45a049;
+}
+
+.btn-request {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-request:hover {
+    background-color: #45a049;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .action-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .category-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .action-buttons {
+        grid-template-columns: 1fr;
+    }
+    
+    .status-card {
+        padding: 15px;
+    }
+    
+    .icon-wrapper {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 50px;
+        margin-top: 15%;
+        margin-left: -5%;
+    }
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+    .quick-actions {
+        margin-top: -15%;
+        margin-bottom: 10px;
+        margin-left: -2%;
+    }
+    .status-overview {
+        margin-left: -1%;
+    }
+    .recent-requests {
+        max-width: 95%;
+        margin-left: 1%;
+    }
+    .service-categories {
+        margin-left: 1%;
+    }
+}
